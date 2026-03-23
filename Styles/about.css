@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg:        #04030d;
+  --surface:   rgba(255,255,255,0.03);
+  --border:    rgba(138,100,255,0.18);
+  --accent:    #a78bfa;       /* nebula violet */
+  --accent2:   #7c3aed;       /* deep purple */
+  --accent3:   #c4b5fd;       /* pale lavender */
+  --text:      #ede9fe;
+  --muted:     #6b5a8e;
+  --glow:      0 0 20px rgba(167,139,250,0.4);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Rajdhani', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ── NEBULA WASH ── */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 50% at 15% 20%, rgba(88,28,220,0.12) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 85% 75%, rgba(124,58,237,0.1) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 60% at 50% 50%, rgba(167,139,250,0.04) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+  animation: nebulaShift 25s ease-in-out infinite alternate;
+}
+@keyframes nebulaShift {
+  0%   { opacity: 0.8; transform: scale(1); }
+  100% { opacity: 1;   transform: scale(1.05); }
+}
+
+/* ── STARFIELD ── */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(2px 2px at 7%  12%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(2px 2px at 19% 34%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 33%  6%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 47% 58%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 61% 21%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(2px 2px at 74% 82%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 88% 44%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 93% 67%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 12% 77%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(2px 2px at 55% 91%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 28% 52%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 82% 18%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(2px 2px at 41% 39%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 66% 73%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at  3% 48%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 97% 29%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 23% 88%, rgba(255,255,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 79% 55%, rgba(255,255,255,0.9)  0%, transparent 100%),
+    radial-gradient(3px 3px at 15% 25%, rgba(255,255,255,1.0)  0%, transparent 100%),
+    radial-gradient(3px 3px at 52% 14%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(3px 3px at 85% 63%, rgba(255,255,255,1.0)  0%, transparent 100%),
+    radial-gradient(3px 3px at 38% 79%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(3px 3px at 70%  8%, rgba(255,255,255,1.0)  0%, transparent 100%),
+    radial-gradient(3px 3px at  9% 94%, rgba(255,255,255,0.95) 0%, transparent 100%),
+    radial-gradient(3px 3px at 63% 47%, rgba(255,255,255,1.0)  0%, transparent 100%),
+    radial-gradient(2px 2px at 22%  3%, rgba(210,195,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 44% 68%, rgba(210,195,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 58% 37%, rgba(210,195,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 76% 92%, rgba(210,195,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 91%  5%, rgba(210,195,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at  6% 61%, rgba(210,195,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 34% 22%, rgba(210,195,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 87% 38%, rgba(210,195,255,0.85) 0%, transparent 100%),
+    radial-gradient(2px 2px at 49% 83%, rgba(210,195,255,0.9)  0%, transparent 100%),
+    radial-gradient(2px 2px at 16% 46%, rgba(210,195,255,0.85) 0%, transparent 100%),
+    radial-gradient(1px 1px at 11% 19%, rgba(255,255,255,0.5)  0%, transparent 100%),
+    radial-gradient(1px 1px at 29% 72%, rgba(255,255,255,0.45) 0%, transparent 100%),
+    radial-gradient(1px 1px at 43% 31%, rgba(255,255,255,0.5)  0%, transparent 100%),
+    radial-gradient(1px 1px at 57% 85%, rgba(255,255,255,0.45) 0%, transparent 100%),
+    radial-gradient(1px 1px at 71% 16%, rgba(255,255,255,0.5)  0%, transparent 100%),
+    radial-gradient(1px 1px at 86% 74%, rgba(255,255,255,0.45) 0%, transparent 100%),
+    radial-gradient(1px 1px at  2% 39%, rgba(255,255,255,0.5)  0%, transparent 100%),
+    radial-gradient(1px 1px at 95% 52%, rgba(255,255,255,0.45) 0%, transparent 100%),
+    radial-gradient(1px 1px at 37% 97%, rgba(255,255,255,0.5)  0%, transparent 100%),
+    radial-gradient(1px 1px at 68% 28%, rgba(255,255,255,0.45) 0%, transparent 100%),
+    radial-gradient(1px 1px at 24% 64%, rgba(255,255,255,0.5)  0%, transparent 100%),
+    radial-gradient(1px 1px at 80%  1%, rgba(255,255,255,0.45) 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 0;
+  animation: twinkle 7s ease-in-out infinite alternate;
+}
+@keyframes twinkle {
+  0%   { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+/* ── GLOW ORBS ── */
+.glow-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
+  z-index: 0;
+}
+.glow-orb.o1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(88,28,220,0.18) 0%, transparent 70%);
+  top: -150px; left: -150px;
+  animation: orbFloat1 12s ease-in-out infinite;
+}
+.glow-orb.o2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(124,58,237,0.14) 0%, transparent 70%);
+  bottom: 100px; right: -100px;
+  animation: orbFloat2 15s ease-in-out infinite;
+}
+@keyframes orbFloat1 {
+  0%,100% { transform: translate(0,0); }
+  50%      { transform: translate(60px, 80px); }
+}
+@keyframes orbFloat2 {
+  0%,100% { transform: translate(0,0); }
+  50%      { transform: translate(-50px,-60px); }
+}
+
+/* ── PAGE WRAPPER ── */
+.about-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 64px 28px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* ── HEADER ── */
+.about-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  animation: fadeDown 0.7s ease both;
+}
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.about-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.about-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(138,100,255,0.3);
+}
+.about-logo-placeholder {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid rgba(138,100,255,0.3);
+  background: linear-gradient(135deg, #0a0a1e, #160d2e);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.about-brand-text { display: flex; flex-direction: column; }
+
+.about-site-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.7rem;
+  letter-spacing: 0.1em;
+  background: linear-gradient(135deg, #fff 30%, var(--accent) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+}
+.about-page-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.28em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+/* ── DIVIDER ── */
+.about-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+/* ── SECTION LABEL ── */
+.section-label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.35em;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.section-label::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 1px;
+  background: var(--muted);
+}
+.section-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--border), transparent);
+}
+
+/* ── CONTENT CARD ── */
+.about-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 32px 36px;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.6s ease both;
+}
+.about-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.4;
+}
+
+.about-card:nth-of-type(1) { animation-delay: 0.1s; }
+.about-card:nth-of-type(2) { animation-delay: 0.2s; }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── ABOUT TEXT ── */
+.about-card h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+  background: linear-gradient(135deg, #fff 40%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.about-card p {
+  font-size: 1.08rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(237,233,254,0.82);
+  margin-bottom: 14px;
+  letter-spacing: 0.02em;
+}
+.about-card p:last-child { margin-bottom: 0; }
+
+.about-card p:last-of-type {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--muted);
+  letter-spacing: 0.1em;
+  margin-top: 24px;
+}
+
+/* ── INLINE HIGHLIGHTS ── */
+.highlight {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── INLINE LINKS ── */
+.about-card a {
+  color: var(--accent3);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(196,181,253,0.3);
+  transition: color 0.2s, border-color 0.2s;
+}
+.about-card a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* ── STRONG ── */
+.about-card strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+/* ── CREDITS TABLE ── */
+.credits-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.85rem;
+}
+.credits-table tr {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.2s;
+}
+.credits-table tr:last-child { border-bottom: none; }
+.credits-table tr:hover { background: rgba(138,100,255,0.04); }
+
+.credits-table td {
+  padding: 11px 8px;
+  letter-spacing: 0.04em;
+  vertical-align: top;
+}
+.credits-table td:first-child {
+  color: var(--muted);
+  white-space: nowrap;
+  padding-right: 28px;
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-top: 13px;
+}
+.credits-table td:last-child {
+  color: var(--text);
+  font-size: 0.88rem;
+}
+a.credit-name {
+  all: unset;
+  display: block;
+  color: #ffffff;
+  cursor: pointer;
+}
+a.credit-name:hover { color: #888888; }
+.credits-table .credit-sub {
+  display: block;
+  color: var(--muted);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+}
+
+/* ── BACK LINK ── */
+.about-back a {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: var(--muted);
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.2s;
+  padding: 8px 0;
+}
+.about-back a:hover { color: var(--accent); }
+.about-back a::before {
+  content: '←';
+  transition: transform 0.2s;
+}
+.about-back a:hover::before { transform: translateX(-4px); }
+
+/* ── CORNER DECORATIONS (hidden — not used on space theme) ── */
+.corner-deco { display: none; }
+
+/* ── NOISE (removed for space theme) ── */
+.noise { display: none; }
+
+/* ── CURSOR ── */
+@media (pointer: fine) {
+  body { cursor: crosshair; }
+  a, button { cursor: crosshair; }
+  *, *::before, *::after { cursor: none !important; }
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+  .about-wrapper { padding: 40px 18px 70px; gap: 28px; }
+  .about-card { padding: 24px 20px; }
+  .corner-deco { display: none; }
+}
+
+.about-logo-placeholder .icon-replacement {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.about-card .hyplink {
+  color: #c4b5fd;
+}
+
+/* ── CURSOR ── */
+#cursor {
+  position: fixed;
+  width: 10px; height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px var(--accent);
+  mix-blend-mode: screen;
+}
+#cursorRing {
+  position: fixed;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(167,139,250,0.45);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
+}
+@media (pointer: fine) {
+  body { cursor: none; }
+  a, button { cursor: none; }
+}

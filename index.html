@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polaris</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&family=Rajdhani:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+
+<body>
+
+    <div id="cursor"></div>
+    <div id="cursorRing"></div>
+
+    <canvas id="starfield"></canvas>
+    <div class="nebula"></div>
+
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+
+    <div class="warning-float">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        Merch offline
+    </div>
+
+    <div class="solar-container" id="solarContainer">
+        <!-- Sun -->
+        <div class="sun" id="sun">
+            <img src="Images/pfp.jpg" alt="Polaris"
+                onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #ede9fe 0%, #a78bfa 40%, #5b21b6 80%, #2e1065 100%)'">
+        </div>
+        <div class="sun-label">POLARIS</div>
+    </div>
+
+    <div class="footer">// POLARIS · 2026</div>
+
+    <script src="Scripts/main.js"></script>
+</body>
+
+</html>
