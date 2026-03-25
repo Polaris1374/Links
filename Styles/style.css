@@ -27,8 +27,30 @@ body {
   justify-content: center;
 }
 
-/* Custom cursor — handled by cursor.js */
+/* Custom cursor */
 body { cursor: none; }
+#cursor {
+  position: fixed;
+  width: 10px; height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px var(--accent);
+  mix-blend-mode: screen;
+  transition: transform 0.05s;
+}
+#cursorRing {
+  position: fixed;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(167,139,250,0.45);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, left 0.08s ease, top 0.08s ease;
+}
 
 /* Stars */
 canvas#starfield {
@@ -300,7 +322,41 @@ canvas#starfield {
   text-transform: uppercase;
 }
 
-/* Mobile adjustments */
+/* ── SECRET PLANET ── */
+.planet[data-secret] {
+  opacity: 0.45;
+  transition: opacity 0.5s ease, filter 0.5s ease, transform 0.3s ease !important;
+}
+.planet[data-secret]:hover {
+  opacity: 1;
+  filter: brightness(1.6) saturate(1.4);
+  transform: translate(-50%, -50%) scale(1.3) !important;
+}
+.planet[data-secret] .planet-label {
+  color: rgba(100,50,160,0.3);
+  letter-spacing: 0.35em;
+  transition: color 0.4s;
+}
+.planet[data-secret]:hover .planet-label {
+  color: rgba(167,139,250,0.7);
+}
+.planet[data-secret] .planet-inner i {
+  transition: color 0.4s, text-shadow 0.4s;
+}
+.planet[data-secret]:hover .planet-inner i {
+  color: rgba(167,139,250,0.9) !important;
+  text-shadow: 0 0 12px rgba(124,58,237,0.8);
+}
+/* Secret orbit ring — dashed and very dim */
+.orbit[data-secret-orbit] {
+  border-style: dashed !important;
+  border-color: rgba(80,30,140,0.12) !important;
+  animation: secretOrbitPulse 8s ease-in-out infinite;
+}
+@keyframes secretOrbitPulse {
+  0%,100% { border-color: rgba(80,30,140,0.08) !important; }
+  50%      { border-color: rgba(120,50,200,0.18) !important; }
+}
 @media (max-width: 600px) {
   .solar-container {
     max-width: 380px;

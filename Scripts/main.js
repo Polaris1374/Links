@@ -1,5 +1,3 @@
-// script.js
-
 // ── STARFIELD ──
 (function() {
   const canvas = document.getElementById('starfield');
@@ -119,6 +117,19 @@ const planets = [
     color: 'radial-gradient(circle at 38% 32%, #888 0%, #555 55%, #222 100%)',
     glow: 'rgba(100,100,100,0.3)',
     disabled: true
+  },
+  {
+    id: 'secrets',
+    label: '???',
+    badge: '[ classified ]',
+    href: 'secrets.html',
+    icon: 'fa-solid fa-lock',
+    size: 26,
+    orbitRadius: 0.515,
+    orbitAngle: 42,
+    color: 'radial-gradient(circle at 38% 32%, #1a0a2e 0%, #0d0618 55%, #050210 100%)',
+    glow: 'rgba(80,30,140,0.35)',
+    secret: true
   }
 ];
 
@@ -138,6 +149,7 @@ function buildSystem() {
     orbit.className = 'orbit';
     orbit.style.width = `${r * 2}px`;
     orbit.style.height = `${r * 2}px`;
+    if (p.secret) orbit.dataset.secretOrbit = '1';
     container.appendChild(orbit);
 
     const wrapper = document.createElement('div');
@@ -147,19 +159,27 @@ function buildSystem() {
 
     const planetEl = document.createElement('a');
     planetEl.className = 'planet' + (p.disabled ? ' disabled' : '');
+    if (p.secret) planetEl.dataset.secret = '1';
     planetEl.href = p.disabled ? '#' : p.href;
     if (!p.disabled) {
       planetEl.target = p.href.startsWith('http') ? '_blank' : '_self';
       planetEl.rel = 'noopener noreferrer';
     }
 
+    planetEl.style.width  = `${p.size}px`;
+    planetEl.style.height = `${p.size}px`;
+
     planetEl.innerHTML = `
       <div class="planet-inner" style="
         background: ${p.color};
         box-shadow: 0 0 10px 3px ${p.glow}, 0 0 25px 8px ${p.glow.replace('0.', '0.2')};
+        ${p.secret ? 'width:100%;height:100%;' : ''}
       ">
         ${p.live ? '<div class="live-ring"></div>' : ''}
-        <i class="${p.icon}" style="font-size:${Math.round(p.size * 0.42)}px; color:rgba(255,255,255,0.92);"></i>
+        ${p.secret
+          ? `<i class="${p.icon}" style="font-size:${Math.round(p.size * 0.42)}px; color:rgba(120,60,200,0.5); transition:color 0.4s, text-shadow 0.4s;"></i>`
+          : `<i class="${p.icon}" style="font-size:${Math.round(p.size * 0.42)}px; color:rgba(255,255,255,0.92);"></i>`
+        }
       </div>
       <span class="planet-label">${p.label}</span>
       <div class="planet-tooltip">${p.badge}</div>
@@ -175,7 +195,8 @@ const orbitSpeeds = {
   youtube:  0.005,
   discord:  0.0035,
   about:    0.002,
-  merch:    0.001
+  merch:    0.001,
+  secrets:  0.0007
 };
 
 const angles = {};
@@ -215,6 +236,6 @@ window.addEventListener('resize', buildSystem);
 
 setTimeout(() => {
   statusEl.textContent = 'Offline';
-  // statusEl.textContent = '● Live Now';   // ← uncomment when live
-  // statusEl.style.color = '#a78bfa';      // ← uncomment when live
+  // statusEl.textContent = '● Live Now';   //  uncomment when live
+  // statusEl.style.color = '#a78bfa';      //  uncomment when live
 }, 1500);
