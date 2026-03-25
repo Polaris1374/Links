@@ -418,30 +418,3 @@ a.credit-name:hover { color: #888888; }
 .about-card .hyplink {
   color: #c4b5fd;
 }
-
-/* ── CURSOR ── */
-#cursor {
-  position: fixed;
-  width: 10px; height: 10px;
-  background: var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 16px var(--accent);
-  mix-blend-mode: screen;
-}
-#cursorRing {
-  position: fixed;
-  width: 36px; height: 36px;
-  border: 1px solid rgba(167,139,250,0.45);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease;
-}
-@media (pointer: fine) {
-  body { cursor: none; }
-  a, button { cursor: none; }
-}

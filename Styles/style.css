@@ -27,30 +27,8 @@ body {
   justify-content: center;
 }
 
-/* Custom cursor */
+/* Custom cursor — handled by cursor.js */
 body { cursor: none; }
-#cursor {
-  position: fixed;
-  width: 10px; height: 10px;
-  background: var(--accent);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 16px var(--accent);
-  mix-blend-mode: screen;
-  transition: transform 0.05s;
-}
-#cursorRing {
-  position: fixed;
-  width: 36px; height: 36px;
-  border: 1px solid rgba(167,139,250,0.45);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, left 0.08s ease, top 0.08s ease;
-}
 
 /* Stars */
 canvas#starfield {
@@ -329,48 +307,4 @@ canvas#starfield {
     max-height: 380px;
   }
   .warning-float { display: none; }
-}
-
-/* ── BLACK HOLE (secrets link) ── */
-.blackhole-link {
-  position: fixed;
-  top: calc(64% + 320px);
-  left: calc(60% - 1024px);
-  transform: translate(-50%, -50%);
-  width: 80px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  z-index: 20;
-  cursor: none;
-}
-#blackholeCanvas {
-  display: block;
-  width: 90px;
-  height: 90px;
-}
-.bh-label {
-  position: absolute;
-  bottom: -18px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: 'Share Tech Mono', monospace;
-  font-size: 0.52rem;
-  letter-spacing: 0.28em;
-  color: rgba(110,55,180,0.4);
-  text-transform: uppercase;
-  white-space: nowrap;
-  pointer-events: none;
-  transition: color 0.3s;
-}
-.blackhole-link:hover .bh-label {
-  color: rgba(167,139,250,0.65);
-}
-@media (max-width: 600px) {
-  .blackhole-link {
-    bottom: 50px;
-    right: 16px;
-  }
 }
