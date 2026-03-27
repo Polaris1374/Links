@@ -225,3 +225,8 @@ function animate() {
 
   requestAnimationFrame(animate);
 }
+
+// ── INIT ──
+buildSystem();
+animate();
+window.addEventListener('resize', buildSystem);
