@@ -225,17 +225,3 @@ function animate() {
 
   requestAnimationFrame(animate);
 }
-
-// ── TWITCH STATUS (placeholder) ──
-const statusEl = document.getElementById('status-text');
-
-// Initialize everything
-buildSystem();
-animate();
-window.addEventListener('resize', buildSystem);
-
-setTimeout(() => {
-  statusEl.textContent = 'Offline';
-  // statusEl.textContent = '● Live Now';   //  uncomment when live
-  // statusEl.style.color = '#a78bfa';      //  uncomment when live
-}, 1500);
