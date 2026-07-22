@@ -70,6 +70,18 @@ const planets = [
     live: true
   },
   {
+    id: 'schedule',
+    label: 'Schedule',
+    badge: 'Stream Schedule',
+    href: 'schedule.html',
+    icon: 'fa-solid fa-calendar-days',
+    size: 38,
+    orbitRadius: 0.18,
+    orbitAngle: 120,
+    color: 'radial-gradient(circle at 38% 32%, #fde68a 0%, #f5a623 50%, #92400e 100%)',
+    glow: 'rgba(245,166,35,0.55)',
+  },
+  {
     id: 'youtube',
     label: 'YouTube',
     badge: 'Main Channel',
@@ -192,6 +204,7 @@ function buildSystem() {
 // ── ANIMATION ──
 const orbitSpeeds = {
   twitch:   0.008,
+  schedule: 0.0065,
   youtube:  0.005,
   discord:  0.0035,
   about:    0.002,
