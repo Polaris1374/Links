@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polaris — Schedule</title>
+
+    <link rel="icon" type="image/jpeg" href="Images/pfp.jpg" sizes="32x32" />
+    <link rel="apple-touch-icon" href="Images/pfp.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Bebas+Neue&family=Rajdhani:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/schedule.css">
+
+    <meta property="og:title" content="Polaris — Schedule">
+    <meta property="og:description" content="Upcoming stream dates, games and times.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://polaris1374.github.io/Links/Images/meta.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+</head>
+
+<body class="schedule-page">
+
+    <div id="cursor"></div>
+    <div id="cursorRing"></div>
+
+    <canvas id="starfield"></canvas>
+    <div class="nebula"></div>
+
+    <div class="corner tl"></div>
+    <div class="corner tr"></div>
+    <div class="corner bl"></div>
+    <div class="corner br"></div>
+
+    <div class="schedule-wrap">
+
+        <header class="sched-hero">
+            <div class="sched-badge">
+                <img src="Images/pfp.jpg" alt="Polaris" class="sched-badge-img"
+                    onerror="this.style.display='none';this.parentElement.style.background='radial-gradient(circle at 40% 35%, #ede9fe 0%, #a78bfa 40%, #5b21b6 80%, #2e1065 100%)'">
+            </div>
+            <h1 class="sched-title">Schedule</h1>
+            <p class="sched-sub">co-stream broadcast log — Polaris &amp; Kill3rKai</p>
+        </header>
+
+        <!-- transmission readout -->
+        <div class="transmission" id="ticker">
+            <span class="transmission-prompt">〉</span>
+            <span class="transmission-text" id="ticker-text"></span><span class="transmission-cursor">_</span>
+        </div>
+
+        <!-- OBSERVATORY PANEL -->
+        <div class="obs-panel">
+            <span class="obs-bracket obs-tl"></span>
+            <span class="obs-bracket obs-tr"></span>
+            <span class="obs-bracket obs-bl"></span>
+            <span class="obs-bracket obs-br"></span>
+
+            <div class="obs-label"><i class="fa-solid fa-satellite-dish"></i> ORBITAL LOG // POLARIS</div>
+
+            <div class="obs-screen" id="obs-screen">
+                <div class="obs-glow"></div>
+
+                <div class="cal-header">
+                    <button class="cal-nav-btn" id="cal-prev" aria-label="Previous month">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div class="cal-title" id="cal-title">JULY 2026</div>
+                    <button class="cal-nav-btn" id="cal-next" aria-label="Next month">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="cal-weekdays">
+                    <span>SUN</span><span>MON</span><span>TUE</span><span>WED</span>
+                    <span>THU</span><span>FRI</span><span>SAT</span>
+                </div>
+
+                <div class="cal-grid" id="cal-grid">
+                    <!-- filled by JS -->
+                </div>
+
+                <div class="cal-legend">
+                    <span class="legend-hint"><i class="fa-solid fa-arrow-pointer"></i> Click a day for full
+                        details</span>
+                    <a class="legend-link" href="https://www.twitch.tv/Polaris1374_" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-twitch" style="color:#9146ff;"></i> Twitch
+                    </a>
+                </div>
+
+                <!-- detail popup, hidden by default -->
+                <div class="cal-detail-backdrop" id="cal-detail-backdrop">
+                    <div class="cal-detail">
+                        <div class="cal-detail-head">
+                            <span id="cal-detail-date">—</span>
+                            <button class="cal-detail-close" id="cal-detail-close" aria-label="Close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="cal-detail-body" id="cal-detail-body">
+                            <!-- filled by JS -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="sched-footer">
+            <span>//</span> POLARIS &nbsp;·&nbsp; ALL RIGHTS RESERVED &nbsp;·&nbsp;
+            <span><a class="footer-link" href="index.html">HOME</a>&nbsp;·&nbsp;2026</span>
+        </footer>
+
+    </div>
+
+    <script src="Scripts/main.js" defer></script>
+    <script src="Scripts/cursor.js" defer></script>
+    <script src="Scripts/schedule.js" defer></script>
+
+</body>
+
+</html>
