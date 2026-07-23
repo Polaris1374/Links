@@ -18,7 +18,7 @@
 
 const scheduleData = [
     {
-        game: "Scrap Mechanic 1.0",
+        game: "Shift At Midnight",
         date: "2026-07-24",
         time: "21:00",
         timezone: "SAST",
@@ -27,7 +27,7 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "Shift At Midnight",
+        game: "Scrap Mechanic 1.0",
         date: "2026-07-25",
         time: "21:00",
         timezone: "SAST",
