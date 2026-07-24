@@ -9,7 +9,7 @@
      game    -> string, name of the game/stream
      date    -> "YYYY-MM-DD"  (local calendar date of the stream)
      time    -> "HH:MM"       (24hr, LOCAL TIME where you are, e.g. Ireland)
-     timezone-> label shown next to the time, e.g. "IST" or "Europe/Dublin"
+     timezone-> label shown next to the time, e.g. "SAST" or "Europe/Dublin"
      duration-> approx length in minutes (used only for the
                 "LIVE" window, defaults to 180 if omitted)
      note    -> optional short string, e.g. "Ranked grind", "Co-op with friend"
@@ -17,24 +17,69 @@
    ============================================================ */
 
 const scheduleData = [
-    {
-        game: "Shift At Midnight",
-        date: "2026-07-24",
-        time: "21:00",
-        timezone: "SAST",
-        duration: 200,
-        note: "Co-op with Kill3rKai",
-        platform: "twitch"
-    },
-    {
-        game: "Scrap Mechanic 1.0",
-        date: "2026-07-25",
-        time: "21:00",
-        timezone: "SAST",
-        duration: 180,
-        note: "Co-op with Kill3rKai",
-        platform: "twitch"
-    },
+  {
+    game: "Shift At Midnight",
+    date: "2026-07-24",
+    time: "21:00",
+    timezone: "SAST",
+    duration: 200,
+    note: "Co-op with Kill3rKai",
+    platform: "twitch"
+  },
+  {
+    game: "Scrap Mechanic 1.0",
+    date: "2026-07-25",
+    time: "21:00",
+    timezone: "SAST",
+    duration: 180,
+    note: "Co-op with Kill3rKai",
+    platform: "twitch"
+  },
+  {
+    game: "Phasmophobia",
+    date: "2026-07-31",
+    time: "21:00",
+    timezone: "SAST",
+    duration: 180,
+    note: "Co-op with Kill3rKai and Teo",
+    platform: "twitch"
+  },
+  {
+    game: "Machine Party",
+    date: "2026-08-01",
+    time: "21:00",
+    timezone: "SAST",
+    duration: 180,
+    note: "Co-op with Kill3rKai and Teo",
+    platform: "twitch"
+  },
+  {
+    game: "Palword",
+    date: "2026-08-07",
+    time: "20:00",
+    timezone: "SAST",
+    duration: 180,
+    note: "Co-op with Polaris and maybe Teo",
+    platform: "twitch"
+  },
+  {
+    game: "Crashout Crew",
+    date: "2026-08-07",
+    time: "23:00",
+    timezone: "SAST",
+    duration: 120,
+    note: "Co-op with Polaris and maybe Teo",
+    platform: "twitch"
+  },
+  {
+    game: "Palword",
+    date: "2026-08-08",
+    time: "21:00",
+    timezone: "SAST",
+    duration: 180,
+    note: "Co-op with Polaris and maybe Teo",
+    platform: "twitch"
+  }
 ];
 
 (function () {
@@ -60,9 +105,9 @@ const scheduleData = [
         });
     }
 
-    function groupByDate(list) {
+    function groupByDate(lSAST) {
         const map = {};
-        list.forEach((e) => {
+        lSAST.forEach((e) => {
             if (!map[e.date]) map[e.date] = [];
             map[e.date].push(e);
         });
@@ -128,11 +173,11 @@ const scheduleData = [
       `;
         }).join("");
 
-        backdrop.classList.add("open");
+        backdrop.classLSAST.add("open");
     }
 
     function closeDetail() {
-        document.getElementById("cal-detail-backdrop").classList.remove("open");
+        document.getElementById("cal-detail-backdrop").classLSAST.remove("open");
     }
 
     function renderCalendar() {
@@ -170,12 +215,12 @@ const scheduleData = [
         grid.innerHTML = cells.map((c) => {
             const key = toKey(c.y, c.m, c.day);
             const dayEntries = byDate[key] || [];
-            const isToday = !c.otherMonth &&
+            const SASToday = !c.otherMonth &&
                 c.y === today.getFullYear() && c.m === today.getMonth() && c.day === today.getDate();
 
             const classes = ["cal-cell"];
             if (c.otherMonth) classes.push("other-month");
-            if (isToday) classes.push("is-today");
+            if (SASToday) classes.push("is-today");
             if (dayEntries.length) classes.push("has-event");
 
             const now = new Date();
@@ -206,7 +251,7 @@ const scheduleData = [
 
         // attach click handlers
         grid.querySelectorAll(".cal-cell.has-event").forEach((cell) => {
-            cell.addEventListener("click", () => {
+            cell.addEventLSASTener("click", () => {
                 const key = cell.getAttribute("data-key");
                 openDetail(key, byDate[key]);
             });
@@ -219,10 +264,10 @@ const scheduleData = [
             if (!label) return;
             const overflow = label.scrollWidth - mask.clientWidth;
             if (overflow > 2) {
-                const dist = overflow + 6; // small buffer so the tail fully clears
-                const duration = Math.min(10, Math.max(4, dist / 12));
-                mask.classList.add("marquee");
-                label.style.setProperty("--marquee-dist", `-${dist}px`);
+                const dSAST = overflow + 6; // small buffer so the tail fully clears
+                const duration = Math.min(10, Math.max(4, dSAST / 12));
+                mask.classLSAST.add("marquee");
+                label.style.setProperty("--marquee-dSAST", `-${dSAST}px`);
                 label.style.setProperty("--marquee-duration", `${duration}s`);
             }
         });
@@ -251,13 +296,13 @@ const scheduleData = [
         renderCalendar();
         updateTicker();
 
-        document.getElementById("cal-prev").addEventListener("click", () => changeMonth(-1));
-        document.getElementById("cal-next").addEventListener("click", () => changeMonth(1));
-        document.getElementById("cal-detail-close").addEventListener("click", closeDetail);
-        document.getElementById("cal-detail-backdrop").addEventListener("click", (e) => {
+        document.getElementById("cal-prev").addEventLSASTener("click", () => changeMonth(-1));
+        document.getElementById("cal-next").addEventLSASTener("click", () => changeMonth(1));
+        document.getElementById("cal-detail-close").addEventLSASTener("click", closeDetail);
+        document.getElementById("cal-detail-backdrop").addEventLSASTener("click", (e) => {
             if (e.target.id === "cal-detail-backdrop") closeDetail();
         });
     }
 
-    document.addEventListener("DOMContentLoaded", init);
+    document.addEventLSASTener("DOMContentLoaded", init);
 })();
