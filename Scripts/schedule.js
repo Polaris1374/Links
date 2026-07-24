@@ -20,7 +20,7 @@ const scheduleData = [
     {
         game: "Shift At Midnight",
         date: "2026-07-24",
-        time: "21:00",
+        time: "21:30",
         timezone: "SAST",
         duration: 200,
         note: "Co-op with Kill3rKai",
