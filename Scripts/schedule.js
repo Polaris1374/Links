@@ -53,33 +53,33 @@ const scheduleData = [
         note: "Co-op with Polaris and Teo",
         platform: "twitch"
     },
-  {
-    game: "Palword",
-    date: "2026-08-07",
-    time: "21:00",
-    timezone: "SAST",
-    duration: 180,
-    note: "Co-op with Polaris and maybe Teo",
-    platform: "twitch"
-  },
-  {
-    game: "Crashout Crew",
-    date: "2026-08-07",
-    time: "23:00",
-    timezone: "SAST",
-    duration: 120,
-    note: "Co-op with Polaris and maybe Teo",
-    platform: "twitch"
-  },
-  {
-    game: "Palword",
-    date: "2026-08-08",
-    time: "20:00",
-    timezone: "IST",
-    duration: 180,
-    note: "Co-op with Polaris and maybe Teo",
-    platform: "twitch"
-  }
+    {
+        game: "Palword",
+        date: "2026-08-07",
+        time: "21:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Co-op with Polaris and maybe Teo",
+        platform: "twitch"
+    },
+    {
+        game: "Crashout Crew",
+        date: "2026-08-07",
+        time: "23:00",
+        timezone: "SAST",
+        duration: 120,
+        note: "Co-op with Polaris and maybe Teo",
+        platform: "twitch"
+    },
+    {
+        game: "Palword",
+        date: "2026-08-08",
+        time: "20:00",
+        timezone: "IST",
+        duration: 180,
+        note: "Co-op with Polaris and maybe Teo",
+        platform: "twitch"
+    }
 ];
 
 (function () {
