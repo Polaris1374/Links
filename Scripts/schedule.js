@@ -20,7 +20,7 @@ const scheduleData = [
     {
         game: "Scrap Mechanic 1.0",
         date: "2026-07-25",
-        time: "23:30",
+        time: "00:00",
         timezone: "SAST",
         duration: 180,
         note: "Co-op with Kill3rKai",
