@@ -20,7 +20,7 @@ const scheduleData = [
     {
         game: "Scrap Mechanic 1.0",
         date: "2026-07-25",
-        time: "21:00",
+        time: "22:00",
         timezone: "SAST",
         duration: 180,
         note: "Co-op with Kill3rKai",
@@ -29,7 +29,7 @@ const scheduleData = [
     {
         game: "Phasmophobia",
         date: "2026-07-31",
-        time: "21:00",
+        time: "22:00",
         timezone: "SAST",
         duration: 180,
         note: "Co-op with Polaris and Teo",
@@ -38,7 +38,7 @@ const scheduleData = [
     {
         game: "Machine Party",
         date: "2026-08-01",
-        time: "21:00",
+        time: "22:00",
         timezone: "SAST",
         duration: 180,
         note: "Co-op with Polaris and Teo",
@@ -47,7 +47,7 @@ const scheduleData = [
     {
         game: "Palword",
         date: "2026-08-07",
-        time: "21:00",
+        time: "22:00",
         timezone: "SAST",
         duration: 180,
         note: "Co-op with Polaris and maybe Teo",
