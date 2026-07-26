@@ -18,15 +18,6 @@
 
 const scheduleData = [
     {
-        game: "Scrap Mechanic 1.0",
-        date: "2026-07-25",
-        time: "00:30",
-        timezone: "SAST",
-        duration: 180,
-        note: "Co-op with Kill3rKai",
-        platform: "twitch"
-    },
-    {
         game: "Phasmophobia",
         date: "2026-08-01",
         time: "23:00",
