@@ -19,7 +19,7 @@
 const scheduleData = [
     {
         game: "Phasmophobia",
-        date: "2026-08-01",
+        date: "2026-07-31",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
@@ -28,7 +28,7 @@ const scheduleData = [
     },
     {
         game: "Machine Party",
-        date: "2026-07-31",
+        date: "2026-08-01",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
