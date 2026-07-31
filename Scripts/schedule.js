@@ -1,5 +1,5 @@
 /* ============================================================
-   schedule.js — Polaris co-stream calendar renderer
+   schedule.js — Kill3rKai co-stream calendar renderer
 
    EDIT YOUR SCHEDULE HERE.
    Add / remove / change entries in the scheduleData array below
@@ -23,7 +23,7 @@ const scheduleData = [
         time: "23:00",
         timezone: "SAST",
         duration: 180,
-        note: "Co-op with Polaris and Teo",
+        note: "Co-op with Kill3rKai and Teo",
         platform: "twitch"
     },
     {
@@ -32,16 +32,7 @@ const scheduleData = [
         time: "23:00",
         timezone: "SAST",
         duration: 180,
-        note: "Co-op with Polaris and Teo",
-        platform: "twitch"
-    },
-    {
-        game: "Palword",
-        date: "2026-08-07",
-        time: "23:00",
-        timezone: "SAST",
-        duration: 180,
-        note: "Co-op with Polaris and maybe Teo",
+        note: "Co-op with Kill3rKai and Teo",
         platform: "twitch"
     },
     {
@@ -50,18 +41,90 @@ const scheduleData = [
         time: "23:00",
         timezone: "SAST",
         duration: 120,
-        note: "Co-op with Polaris and maybe Teo",
+        note: "Co-op with Kill3rKai and maybe Teo",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-08",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-14",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-15",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-21",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-22",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-28",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-08-29",
+        time: "20:00",
+        timezone: "IST",
+        duration: 120,
+        note: "TBD",
         platform: "twitch"
     },
     {
         game: "Palword",
-        date: "2026-08-08",
+        date: "2026-09-04",
         time: "23:00",
         timezone: "IST",
         duration: 180,
-        note: "Co-op with Polaris and maybe Teo",
+        note: "Co-op with Kill3rKai and maybe Teo",
         platform: "twitch"
-    }
+    },
+    {
+        game: "Palword",
+        date: "2026-09-05",
+        time: "23:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Co-op with Kill3rKai and maybe Teo",
+        platform: "twitch"
+    },
 ];
 
 (function () {
