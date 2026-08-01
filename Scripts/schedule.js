@@ -18,15 +18,6 @@
 
 const scheduleData = [
     {
-        game: "F1 26",
-        date: "2026-08-01",
-        time: "22:00",
-        timezone: "IST",
-        duration: 180,
-        note: "League Practice and maybe league race",
-        platform: "twitch"
-    },
-    {
         game: "Machine Party",
         date: "2026-08-08",
         time: "23:00",
