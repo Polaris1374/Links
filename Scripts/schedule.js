@@ -46,15 +46,6 @@ const scheduleData = [
     },
     {
         game: "TBD",
-        date: "2026-08-08",
-        time: "20:00",
-        timezone: "IST",
-        duration: 120,
-        note: "TBD",
-        platform: "twitch"
-    },
-    {
-        game: "TBD",
         date: "2026-08-14",
         time: "20:00",
         timezone: "IST",
