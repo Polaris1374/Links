@@ -18,17 +18,17 @@
 
 const scheduleData = [
     {
-        game: "Phasmophobia",
-        date: "2026-07-31",
-        time: "23:00",
-        timezone: "SAST",
+        game: "F1 26",
+        date: "2026-08-01",
+        time: "22:00",
+        timezone: "IST",
         duration: 180,
-        note: "Co-op with Kill3rKai and Teo",
+        note: "League Practice and maybe league race",
         platform: "twitch"
     },
     {
         game: "Machine Party",
-        date: "2026-08-01",
+        date: "2026-08-08",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
