@@ -36,21 +36,21 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "TBD",
+        game: "VSM F1 League Practice",
         date: "2026-08-14",
         time: "20:00",
         timezone: "IST",
         duration: 120,
-        note: "TBD",
+        note: "VSM F1 League Practice",
         platform: "twitch"
     },
     {
-        game: "TBD",
+        game: "VSM F1 League Practice",
         date: "2026-08-15",
         time: "20:00",
         timezone: "IST",
         duration: 120,
-        note: "TBD",
+        note: "VSM F1 League Practice",
         platform: "twitch"
     },
     {
