@@ -19,7 +19,7 @@
 const scheduleData = [
     {
         game: "Machine Party",
-        date: "2026-08-08",
+        date: "2026-08-15",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
@@ -28,7 +28,7 @@ const scheduleData = [
     },
     {
         game: "Crashout Crew",
-        date: "2026-08-07",
+        date: "2026-08-14",
         time: "23:00",
         timezone: "SAST",
         duration: 120,
@@ -37,7 +37,7 @@ const scheduleData = [
     },
     {
         game: "VSM F1 League FP1",
-        date: "2026-08-14",
+        date: "2026-08-21",
         time: "20:00",
         timezone: "IST",
         duration: 120,
@@ -46,7 +46,7 @@ const scheduleData = [
     },
     {
         game: "VSM F1 League FP2",
-        date: "2026-08-15",
+        date: "2026-08-22",
         time: "20:00",
         timezone: "IST",
         duration: 120,
