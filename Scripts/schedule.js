@@ -18,7 +18,7 @@
 
 const scheduleData = [
     {
-        game: "Machine Party",
+        game: "TBD",
         date: "2026-08-15",
         time: "23:00",
         timezone: "SAST",
@@ -27,7 +27,7 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "Crashout Crew",
+        game: "Ready Or Not",
         date: "2026-08-14",
         time: "23:00",
         timezone: "SAST",
