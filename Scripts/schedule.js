@@ -29,7 +29,7 @@ const scheduleData = [
     {
         game: "Ready Or Not",
         date: "2026-08-14",
-        time: "23:00",
+        time: "00:00",
         timezone: "SAST",
         duration: 120,
         note: "Co-op with Kill3rKai and maybe Teo",
