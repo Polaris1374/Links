@@ -19,7 +19,7 @@
 const scheduleData = [
     {
         game: "Minecraft",
-        date: "2026-08-15",
+        date: "2026-08-16",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
