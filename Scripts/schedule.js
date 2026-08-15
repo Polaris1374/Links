@@ -18,21 +18,12 @@
 
 const scheduleData = [
     {
-        game: "TBD",
+        game: "Minecraft",
         date: "2026-08-15",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
-        note: "Co-op with Kill3rKai and Teo",
-        platform: "twitch"
-    },
-    {
-        game: "Ready Or Not",
-        date: "2026-08-14",
-        time: "00:00",
-        timezone: "SAST",
-        duration: 120,
-        note: "Co-op with Kill3rKai and maybe Teo",
+        note: "Stream with Kill3rKai and Teo On The VSMP Server",
         platform: "twitch"
     },
     {
