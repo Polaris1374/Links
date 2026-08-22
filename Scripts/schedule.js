@@ -23,7 +23,7 @@ const scheduleData = [
         time: "00:00",
         timezone: "IST",
         duration: 120,
-        note: "TBD",
+        note: "Fishing With Kill3rKai And Teo",
         platform: "twitch"
     },
     {
