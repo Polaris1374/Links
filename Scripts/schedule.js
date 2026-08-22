@@ -18,9 +18,9 @@
 
 const scheduleData = [
     {
-        game: "TBD",
+        game: "How To Fish",
         date: "2026-08-22",
-        time: "20:00",
+        time: "00:00",
         timezone: "IST",
         duration: 120,
         note: "TBD",
