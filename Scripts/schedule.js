@@ -21,18 +21,18 @@ const scheduleData = [
         game: "Warthunder",
         date: "2026-09-04",
         time: "23:00",
-        timezone: "IST",
+        timezone: "SAST",
         duration: 180,
         note: "Grinding the F16XL Event",
         platform: "twitch"
     },
     {
-        game: "TBD",
+        game: "WARDOGS",
         date: "2026-09-05",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
-        note: "Co-op with Kill3rKai and maybe Teo",
+        note: "Polaris Plays The WARDOGS Playtest With Kill3rKai And Orion",
         platform: "twitch"
     },
 ];
