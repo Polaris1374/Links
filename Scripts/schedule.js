@@ -18,43 +18,16 @@
 
 const scheduleData = [
     {
-        game: "How To Fish",
-        date: "2026-08-22",
-        time: "00:00",
-        timezone: "IST",
-        duration: 120,
-        note: "Fishing With Kill3rKai And Teo",
-        platform: "twitch"
-    },
-    {
-        game: "TBD",
-        date: "2026-08-28",
-        time: "20:00",
-        timezone: "IST",
-        duration: 120,
-        note: "TBD",
-        platform: "twitch"
-    },
-    {
-        game: "TBD",
-        date: "2026-08-29",
-        time: "20:00",
-        timezone: "IST",
-        duration: 120,
-        note: "TBD",
-        platform: "twitch"
-    },
-    {
-        game: "Palword",
+        game: "Warthunder",
         date: "2026-09-04",
         time: "23:00",
         timezone: "IST",
         duration: 180,
-        note: "Co-op with Kill3rKai and maybe Teo",
+        note: "Grinding the F16XL Event",
         platform: "twitch"
     },
     {
-        game: "Palword",
+        game: "TBD",
         date: "2026-09-05",
         time: "23:00",
         timezone: "SAST",
