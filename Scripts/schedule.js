@@ -29,7 +29,7 @@ const scheduleData = [
     {
         game: "WARDOGS",
         date: "2026-09-05",
-        time: "23:00",
+        time: "00:30",
         timezone: "SAST",
         duration: 180,
         note: "Polaris Plays The WARDOGS Playtest With Kill3rKai And Orion",
