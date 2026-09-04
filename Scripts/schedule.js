@@ -18,12 +18,12 @@
 
 const scheduleData = [
     {
-        game: "Warthunder",
+        game: "Aviassembly",
         date: "2026-09-04",
         time: "23:00",
         timezone: "SAST",
         duration: 180,
-        note: "Grinding the F16XL Event",
+        note: "Flying High",
         platform: "twitch"
     },
     {
