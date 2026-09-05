@@ -27,12 +27,12 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "WARDOGS",
+        game: "Warthunder",
         date: "2026-09-05",
         time: "00:30",
         timezone: "SAST",
         duration: 180,
-        note: "Polaris Plays The WARDOGS Playtest With Kill3rKai And Orion",
+        note: "Flying High",
         platform: "twitch"
     },
 ];
