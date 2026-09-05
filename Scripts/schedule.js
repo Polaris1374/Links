@@ -18,21 +18,30 @@
 
 const scheduleData = [
     {
-        game: "Aviassembly",
-        date: "2026-09-04",
-        time: "23:00",
+        game: "Warthunder",
+        date: "2026-09-05",
+        time: "00:30",
         timezone: "SAST",
         duration: 180,
         note: "Flying High",
         platform: "twitch"
     },
     {
-        game: "WARDOGS",
-        date: "2026-09-05",
+        game: "TBD",
+        date: "2026-09-11",
         time: "00:30",
         timezone: "SAST",
         duration: 180,
-        note: "Polaris Plays The WARDOGS Playtest With Kill3rKai And Orion",
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-09-12",
+        time: "00:30",
+        timezone: "SAST",
+        duration: 180,
+        note: "TBD",
         platform: "twitch"
     },
 ];
