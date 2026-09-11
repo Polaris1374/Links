@@ -18,18 +18,27 @@
 
 const scheduleData = [
     {
-        game: "Warthunder",
-        date: "2026-09-05",
-        time: "00:30",
+        game: "WARDOGS",
+        date: "2026-09-11",
+        time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Flying High",
+        note: "making millions in WARDOGS :D",
+        platform: "twitch"
+    },
+    {
+        game: "WARDOGS",
+        date: "2026-09-12",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "making millions in WARDOGS :D",
         platform: "twitch"
     },
     {
         game: "TBD",
-        date: "2026-09-11",
-        time: "00:30",
+        date: "2026-09-18",
+        time: "00:00",
         timezone: "SAST",
         duration: 180,
         note: "TBD",
@@ -37,8 +46,26 @@ const scheduleData = [
     },
     {
         game: "TBD",
-        date: "2026-09-12",
-        time: "00:30",
+        date: "2026-09-19",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-09-25",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-09-26",
+        time: "00:00",
         timezone: "SAST",
         duration: 180,
         note: "TBD",
