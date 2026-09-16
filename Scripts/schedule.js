@@ -18,27 +18,36 @@
 
 const scheduleData = [
     {
-        game: "WarThunder",
-        date: "2026-09-12",
+        game: "Warthunder",
+        date: "2026-09-18",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "grinding tasks in warthunder :D",
+        note: "Warthunder Task Run!",
         platform: "twitch"
     },
     {
         game: "TBD",
         date: "2026-09-18",
-        time: "00:00",
+        time: "01:00",
         timezone: "SAST",
         duration: 180,
         note: "TBD",
         platform: "twitch"
     },
     {
-        game: "TBD",
+        game: "Warthunder",
         date: "2026-09-19",
         time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Task Run!",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
+        date: "2026-09-19",
+        time: "01:00",
         timezone: "SAST",
         duration: 180,
         note: "TBD",
@@ -55,6 +64,15 @@ const scheduleData = [
     },
     {
         game: "TBD",
+        date: "2026-09-25",
+        time: "01:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "TBD",
+        platform: "twitch"
+    },
+    {
+        game: "TBD",
         date: "2026-09-26",
         time: "00:00",
         timezone: "SAST",
@@ -62,6 +80,15 @@ const scheduleData = [
         note: "TBD",
         platform: "twitch"
     },
+    {
+        game: "TBD",
+        date: "2026-09-26",
+        time: "01:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "TBD",
+        platform: "twitch"
+    }
 ];
 
 (function () {
