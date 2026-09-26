@@ -36,42 +36,24 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "TBD",
+        game: "BREAK DAY",
         date: "2026-09-25",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "TBD",
+        note: "No Stream Today",
         platform: "twitch"
     },
     {
-        game: "TBD",
-        date: "2026-09-25",
-        time: "01:00",
-        timezone: "SAST",
-        duration: 180,
-        note: "TBD",
-        platform: "twitch"
-    },
-    {
-        game: "TBD",
+        game: "Warthunder",
         date: "2026-09-26",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "TBD",
+        note: "Warthunder Run!",
         platform: "twitch"
     },
-    {
-        game: "TBD",
-        date: "2026-09-26",
-        time: "01:00",
-        timezone: "SAST",
-        duration: 180,
-        note: "TBD",
-        platform: "twitch"
-    }
-];
+    ];
 
 (function () {
     const PLATFORM = {
