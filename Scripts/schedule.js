@@ -45,12 +45,12 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "Warthunder",
+        game: "Minecraft",
         date: "2026-09-26",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Run!",
+        note: "VSM takes on my minecraft challenge!",
         platform: "twitch"
     },
     ];
