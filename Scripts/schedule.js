@@ -53,7 +53,7 @@ const scheduleData = [
         note: "VSM takes on my minecraft challenge!",
         platform: "twitch"
     },
-    ];
+];
 
 (function () {
     const PLATFORM = {
