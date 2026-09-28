@@ -53,6 +53,24 @@ const scheduleData = [
         note: "VSM takes on my minecraft challenge!",
         platform: "twitch"
     },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-02",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-03",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
 ];
 
 (function () {
