@@ -55,7 +55,16 @@ const scheduleData = [
     },
     {
         game: "WARTHUNDER",
-        date: "2026-09-26",
+        date: "2026-10-02",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-03",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
