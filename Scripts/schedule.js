@@ -54,12 +54,12 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "WARTHUNDER",
+        game: "Driving Rogue",
         date: "2026-10-02",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Grind!",
+        note: "Driving Rogue",
         platform: "twitch"
     },
     {
