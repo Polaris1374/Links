@@ -71,6 +71,78 @@ const scheduleData = [
         note: "Warthunder Grind!",
         platform: "twitch"
     },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-09",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-10",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-16",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-17",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-23",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-24",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-30",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-31",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Grind!",
+        platform: "twitch"
+    },
 ];
 
 (function () {
