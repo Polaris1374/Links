@@ -90,39 +90,39 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "WARTHUNDER",
+        game: "PHASMOPHOBIA",
         date: "2026-10-16",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Grind!",
+        note: "Phasmophobia Spooky Season!",
         platform: "twitch"
     },
     {
-        game: "WARTHUNDER",
+        game: "PHASMOPHOBIA",
         date: "2026-10-17",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Grind!",
+        note: "Phasmophobia Spooky Season!",
         platform: "twitch"
     },
     {
-        game: "WARTHUNDER",
+        game: "VALORANT",
         date: "2026-10-23",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Grind!",
+        note: "Valo Grind!",
         platform: "twitch"
     },
     {
-        game: "WARTHUNDER",
+        game: "VALORANT",
         date: "2026-10-24",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Grind!",
+        note: "Valo Grind!",
         platform: "twitch"
     },
     {
