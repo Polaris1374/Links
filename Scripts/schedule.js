@@ -117,12 +117,12 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "VALORANT",
+        game: "WARTHUNDER",
         date: "2026-10-17",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Valo Grind!",
+        note: "Warthunder Weekend!",
         platform: "twitch"
     },
     {
