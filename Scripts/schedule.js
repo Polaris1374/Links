@@ -118,15 +118,6 @@ const scheduleData = [
     },
     {
         game: "WARTHUNDER",
-        date: "2026-10-17",
-        time: "00:00",
-        timezone: "SAST",
-        duration: 180,
-        note: "Warthunder Weekend!",
-        platform: "twitch"
-    },
-    {
-        game: "WARTHUNDER",
         date: "2026-10-30",
         time: "00:00",
         timezone: "SAST",
