@@ -103,6 +103,15 @@ const scheduleData = [
         date: "2026-10-24",
         time: "00:00",
         timezone: "SAST",
+        duration: 120,
+        note: "Phasmophobia Spooky Season!",
+        platform: "twitch"
+    },
+    {
+        game: "WARTHUNDER",
+        date: "2026-10-24",
+        time: "00:00",
+        timezone: "SAST",
         duration: 180,
         note: "Phasmophobia Spooky Season!",
         platform: "twitch"
