@@ -143,6 +143,132 @@ const scheduleData = [
         note: "Warthunder Grind!",
         platform: "twitch"
     },
+    {
+        game: "Warthunder",
+        date: "2026-11-06",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Call Of Duty: Modern Warfare 4",
+        date: "2026-11-06",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Call Of Duty: Modern Warfare 4 Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-07",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Call OF Duty: Modern Warfare 4",
+        date: "2026-11-07",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-13",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-14",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-20",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-21",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-27",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-11-28",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-12-04",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-12-05",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-12-11",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
+    {
+        game: "Warthunder",
+        date: "2026-12-12",
+        time: "00:00",
+        timezone: "SAST",
+        duration: 180,
+        note: "Warthunder Stream",
+        platform: "twitch"
+    },
 ];
 
 (function () {
