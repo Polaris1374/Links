@@ -189,7 +189,7 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "Warthunder",
+        game: "Fortnite",
         date: "2026-11-14",
         time: "00:00",
         timezone: "SAST",
