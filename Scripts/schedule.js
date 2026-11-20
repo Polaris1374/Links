@@ -198,7 +198,7 @@ const scheduleData = [
         platform: "twitch"
     },
     {
-        game: "Grand Theft Auto V",
+        game: "Grand Theft Auto V Story",
         date: "2026-11-20",
         time: "00:00",
         timezone: "SAST",
