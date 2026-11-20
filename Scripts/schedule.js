@@ -194,16 +194,16 @@ const scheduleData = [
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Stream",
+        note: "Fortnite Stream",
         platform: "twitch"
     },
     {
-        game: "Warthunder",
+        game: "Grand Theft Auto V",
         date: "2026-11-20",
         time: "00:00",
         timezone: "SAST",
         duration: 180,
-        note: "Warthunder Stream",
+        note: "Grand Theft Auto V Stream",
         platform: "twitch"
     },
     {
