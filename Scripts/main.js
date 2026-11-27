@@ -130,6 +130,20 @@ const planets = [
     glow: 'rgba(100,100,100,0.3)',
     disabled: true
   },
+
+  {
+    id: 'instagram',
+    label: 'Instagram',
+    badge: 'Follow Me',
+    href: 'https://www.instagram.com/polaris1374_vt/',
+    icon: 'fa-brands fa-instagram',
+    size: 38,
+    orbitRadius: 0.40,
+    orbitAngle: 235,
+    color: 'radial-gradient(circle at 38% 32%, #f9a8d4 0%, #e1306c 50%, #833ab4 100%)',
+    glow: 'rgba(225,48,108,0.6)',
+  },
+
   {
     id: 'secrets',
     label: '???',
@@ -202,15 +216,18 @@ function buildSystem() {
 }
 
 // ── ANIMATION ──
+
 const orbitSpeeds = {
-  twitch:   0.008,
-  schedule: 0.0065,
-  youtube:  0.005,
-  discord:  0.0035,
-  about:    0.002,
-  merch:    0.001,
-  secrets:  0.0007
+  twitch:    0.008,
+  schedule:  0.0065,
+  youtube:   0.005,
+  discord:   0.0035,
+  about:     0.002,
+  merch:     0.001,
+  instagram: 0.00085,
+  secrets:   0.0007
 };
+
 
 const angles = {};
 planets.forEach(p => { angles[p.id] = p.orbitAngle; });
